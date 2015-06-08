@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Frisby_v1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="exitoguardar">Éxito al Guardar la sede</string>
+    <string name="exitoborrar">Se Borró la Sede</string>
+    <string name="noexiste">No Existe La sede con ese número</string>
+    <string name="exitomodificar">Éxito al Modificar la sede</string>
+
+
+    <string name="maintitulo">Acá Puede Modificar las Sedes</string>
+
+    <string name="numerosede">Nímero de la sede</string>
+    <string name="nombresede">Nombre de la sede</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="buscar">Buscar</string>
+    <string name="guardar">Guardar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="Modificar">Modificar</string>
+    <string name="Retornar">Menú Principal</string>
+
+
+    <string name="editarsedes">Editar Sedes</string>
+    <string name="versedes">Ver Sedes</string>
+    <string name="nadie">Nadie Lo Hace Como frisby lo hace</string>
+    <string name="title_activity_mapas_ubication">Map</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+
+
+
+
+</resources>

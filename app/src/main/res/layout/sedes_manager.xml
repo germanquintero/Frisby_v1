@@ -1,0 +1,198 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fffdf8ff"
+
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imgHamburger"
+        android:layout_width="123dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logofrisby"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#ffffffe3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/maintitulo"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#ff958e4b"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/numerosede"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/editTextNumSede"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ems="10"
+                android:inputType="numberSigned">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textSize="20dp"
+                android:text="@string/nombresede" />
+
+
+            <EditText
+                android:id="@+id/editTextNombreSede"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ems="10" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="20dp"
+                android:text="@string/latitud" />
+
+            <EditText
+                android:id="@+id/editTextLatitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/longitud"/>
+
+            <EditText
+                android:id="@+id/editTextlongitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#ff958e4b"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:onClick="guardar"
+                android:text="@string/guardar"
+                />
+
+            <Button
+                android:id="@+id/btBuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="consulta"
+                android:text="@string/buscar" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="eliminar"
+                android:text="@string/eliminar"/>
+
+            <Button
+                android:id="@+id/btModificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="modificacion"
+                android:text="@string/Modificar" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btretornar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="retornar"
+            android:text="@string/Retornar"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btnsedesr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="allsedes"
+            android:text="@string/sedesdisponibles"
+            android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>

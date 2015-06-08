@@ -1,0 +1,88 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fffdf8ff"
+     >
+
+
+
+    <ImageView
+        android:id="@+id/imgHamburger"
+        android:layout_width="199dp"
+        android:layout_height="265dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nadiefrisby"
+        android:layout_gravity="center"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bienvenido"
+        android:onClick="allsedes"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/bEditarSedes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnEditPlaces"
+        android:text="Editar Sedes" />
+
+
+
+        <Button
+            android:id="@+id/bVersedes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="versedes"
+            android:text="Ver Sedes" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/oferta"
+        android:onClick="allsedes"/>
+
+
+
+    <ImageView
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/publidaid"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+
+    </LinearLayout>
