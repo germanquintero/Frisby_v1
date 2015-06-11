@@ -5,6 +5,7 @@ package com.example.ga.frisby_v1;
  */
 
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -12,6 +13,11 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
+
+
+    public AdminSQLiteOpenHelper(Context contexto){
+        super(contexto,"frisbydb", null,1);
+    }
 
     public AdminSQLiteOpenHelper(Context context, String nombresede, CursorFactory factory, int version) {
         super(context, nombresede, factory, version);
@@ -30,7 +36,9 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
 
 
 
+
     public Read_places readUbication(int id) {
+
 
 
         SQLiteDatabase db = getReadableDatabase();
@@ -40,8 +48,8 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
         if(c != null) {
             c.moveToFirst();
         }
-        Read_places places = new Read_places(c.getInt(0), c.getString(1),
-                c.getDouble(2), c.getDouble(3));
+        Read_places places = new Read_places(c.getString(0), c.getString(1),c.getString(2), c.getString(3));
+
         db.close();
         c.close();
         return places;

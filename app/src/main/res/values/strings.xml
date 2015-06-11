@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Frisby_v1</string>
+    <string name="app_name">Frisby Cerca</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -12,17 +12,31 @@
 
     <string name="maintitulo">Acá Puede Modificar las Sedes</string>
 
-    <string name="numerosede">Nímero de la sede</string>
+    <string name="numerosede">Número de la sede</string>
     <string name="nombresede">Nombre de la sede</string>
     <string name="latitud">Latitud</string>
     <string name="longitud">Longitud</string>
     <string name="buscar">Buscar</string>
     <string name="guardar">Guardar</string>
     <string name="eliminar">Eliminar</string>
-    <string name="Modificar">Modificar</string>
+    <string name="Modificar">Editar</string>
     <string name="Retornar">Menú Principal</string>
     <string name="sedesdisponibles">Sedes Disponibles:</string>
     <string name="oferta">Oferta del Mes</string>
+    <string name="numsedes">Mayor a 1</string>
+    <string name="tododatos">Por Favor, Ingrese Todos los datos</string>
+    <string name="solo5">Solo número positivos porfavor</string>
+    <string name="buscarsede">Para Buscar Ingrese el número de la sede</string>
+    <string name="eliminarsede">Busque la sede y después elimínela</string>
+    <string name="editarsede">Busque la sede y luego edítela</string>
+    <string name="yaexiste">Ya Existe una sede Con Ese número</string>
+
+
+
+
+
+
+
 
     <string name="bienvenido">Descubre Cual Sede Te queda Más Cerca</string>
 
@@ -38,6 +52,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_prueba">Map</string>
     <string name="title_activity_ubication_sedes">Map</string>
+    <string name="title_activity_activity_ubication_sedes">Map</string>
 
 
 

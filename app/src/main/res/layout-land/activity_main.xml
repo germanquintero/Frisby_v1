@@ -5,18 +5,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffe8e973"
-     >
+    android:weightSum="1">
 
 
 
     <ImageView
         android:id="@+id/imgHamburger"
-        android:layout_width="199dp"
-        android:layout_height="265dp"
+        android:layout_width="173dp"
+        android:layout_height="236dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:src="@drawable/nadie_image"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
 
     <TextView
 
@@ -35,13 +35,13 @@
         android:orientation="horizontal"
         android:layout_gravity="center">
 
-    <Button
-        android:id="@+id/bEditarSedes"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="btnEditPlaces"
-        android:text="Editar Sedes"
-        android:drawableLeft="@drawable/ic_ico_edit"/>
+        <Button
+            android:id="@+id/bEditarSedes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnEditPlaces"
+            android:text="Editar Sedes"
+            android:drawableLeft="@drawable/ic_ico_edit"/>
 
 
 
@@ -60,32 +60,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center">
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="5dp"
-            android:background="@android:color/black"
-            android:layout_marginTop="5dp"
-            />
-
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:textSize="25dp"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/oferta"
-        android:onClick="allsedes"/>
 
 
 
-    <ImageView
 
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/publidaid"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent" />
+
     </LinearLayout>
 
-    </LinearLayout>
+</LinearLayout>

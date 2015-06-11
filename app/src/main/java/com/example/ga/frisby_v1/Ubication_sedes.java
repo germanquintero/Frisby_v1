@@ -9,6 +9,7 @@ import android.location.LocationManager;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -87,42 +88,100 @@ public class Ubication_sedes extends FragmentActivity {
         ubicacion_sede[3]=admin.readUbication(4);
         ubicacion_sede[4]=admin.readUbication(5);
 
-        LatLng position0 = new LatLng(ubicacion_sede[0].getlatitud(),ubicacion_sede[0].getlongitud());
-        mMap.addMarker(new MarkerOptions()
-                .title(ubicacion_sede[0].getnombresede())
-                .snippet("Sede: " + Integer.toString(ubicacion_sede[0].getnumsede()))
-                .position(position0));
+        String strinngSede1=String.valueOf(ubicacion_sede[0].getnumsede());
+        String strinngSede2=String.valueOf(ubicacion_sede[1].getnumsede());
+        String strinngSede3=String.valueOf(ubicacion_sede[2].getnumsede());
+        String strinngSede4=String.valueOf(ubicacion_sede[3].getnumsede());
+        String strinngSede5=String.valueOf(ubicacion_sede[4].getnumsede());
 
-        LatLng position1 = new LatLng(ubicacion_sede[1].getlatitud(),ubicacion_sede[1].getlongitud());
-        mMap.addMarker(new MarkerOptions()
-                .title(ubicacion_sede[1].getnombresede())
-                .snippet("Sede: " + Integer.toString(ubicacion_sede[1].getnumsede()))
-                .position(position1));
+        if (ubicacion_sede[4].getnumsede()==""){
+            Toast.makeText(this, "NO HAY MAS NADA", Toast.LENGTH_SHORT).show();
 
-        LatLng position2 = new LatLng(ubicacion_sede[2].getlatitud(),ubicacion_sede[2].getlongitud());
-        mMap.addMarker(new MarkerOptions()
-                .title(ubicacion_sede[2].getnombresede())
-                .snippet("Sede: " + Integer.toString(ubicacion_sede[2].getnumsede()))
-                .position(position2));
+        }
 
-        LatLng position3 = new LatLng(ubicacion_sede[3].getlatitud(),ubicacion_sede[3].getlongitud());
-        mMap.addMarker(new MarkerOptions()
-                .title(ubicacion_sede[3].getnombresede())
-                .snippet("Sede: " + Integer.toString(ubicacion_sede[3].getnumsede()))
-                .position(position3));
+        if (strinngSede1=="" && strinngSede2=="" && strinngSede3=="" && strinngSede4==""&& strinngSede5==""){
+            Toast.makeText(this, "No hay Ninguna Sede Guardada", Toast.LENGTH_SHORT).show();
+            return;
 
-        LatLng position4 = new LatLng(ubicacion_sede[4].getlatitud(),ubicacion_sede[4].getlongitud());
-        mMap.addMarker(new MarkerOptions()
-                .title(ubicacion_sede[4].getnombresede())
-                .snippet("Sede: " + Integer.toString(ubicacion_sede[4].getnumsede()))
-                .position(position4));
+        }
+        else {
 
 
 
-        //Para acercar masla cámara
+            String stringLat0 = String.valueOf(ubicacion_sede[0].getlatitud());
+            if (stringLat0=="") {
+                Toast.makeText(this, "La Sede 1 No Existe", Toast.LENGTH_SHORT).show();
+                return;
+            } else {
+                LatLng position0 = new LatLng(Double.parseDouble(ubicacion_sede[0].getlatitud()), Double.parseDouble(ubicacion_sede[0].getlongitud()));
+                mMap.addMarker(new MarkerOptions()
+                        .title(ubicacion_sede[0].getnombresede())
+                        .snippet("Sede: " +(ubicacion_sede[0].getnumsede()))
+                        .position(position0));
+            }
+
+
+            String stringLat1 = String.valueOf(ubicacion_sede[1].getlatitud());
+            if (stringLat1=="") {
+                Toast.makeText(this, "La Sede 2 No Existe", Toast.LENGTH_SHORT).show();
+                return;
+            } else {
+                LatLng position1 = new LatLng(Double.parseDouble(ubicacion_sede[1].getlatitud()), Double.parseDouble(ubicacion_sede[1].getlongitud()));
+                mMap.addMarker(new MarkerOptions()
+                        .title(ubicacion_sede[1].getnombresede())
+                        .snippet("Sede: " + (ubicacion_sede[1].getnumsede()))
+                        .position(position1));
+            }
+
+
+            String stringLat2 = String.valueOf(ubicacion_sede[2].getlatitud());
+            if (stringLat2=="") {
+                Toast.makeText(this, "La Sede 3 No Existe", Toast.LENGTH_SHORT).show();
+                return;
+            } else {
+
+                LatLng position2 = new LatLng(Double.parseDouble(ubicacion_sede[2].getlatitud()), Double.parseDouble(ubicacion_sede[2].getlongitud()));
+                mMap.addMarker(new MarkerOptions()
+                        .title(ubicacion_sede[2].getnombresede())
+                        .snippet("Sede: " + (ubicacion_sede[2].getnumsede()))
+                        .position(position2));
+
+            }
+
+
+            String stringLat3 = String.valueOf(ubicacion_sede[3].getlatitud());
+            if (stringLat3=="") {
+                Toast.makeText(this, "La Sede 4 No Existe", Toast.LENGTH_SHORT).show();
+                return;
+            } else {
+                LatLng position3 = new LatLng(Double.parseDouble(ubicacion_sede[3].getlatitud()), Double.parseDouble(ubicacion_sede[3].getlongitud()));
+                mMap.addMarker(new MarkerOptions()
+                        .title(ubicacion_sede[3].getnombresede())
+                        .snippet("Sede: " + (ubicacion_sede[3].getnumsede()))
+                        .position(position3));
+            }
+
+
+            String stringLat4 = ubicacion_sede[4].getnumsede();
+           // int conv4=Integer.parseInt(stringLat4);
+            //int conv44=conv4*0;
+
+            if (stringLat4 =="") {
+                Toast.makeText(this, "La Sede 5 No Existe", Toast.LENGTH_SHORT).show();
+                return;
+            } else {
+                LatLng position4 = new LatLng(Double.parseDouble(ubicacion_sede[4].getlatitud()), Double.parseDouble(ubicacion_sede[4].getlongitud()));
+                mMap.addMarker(new MarkerOptions()
+                        .title(ubicacion_sede[4].getnombresede())
+                        .snippet("Sede: " + (ubicacion_sede[4].getnumsede()))
+                        .position(position4));
+            }
+
+            //Para acercar masla cámara
          mMap.setMyLocationEnabled(true);
         LatLng Medellin = new LatLng(6.2705,-75.572120);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Medellin, 12));
+        }
 
         
 

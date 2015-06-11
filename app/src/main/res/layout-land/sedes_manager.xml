@@ -1,4 +1,6 @@
 
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
@@ -57,86 +59,96 @@
                 android:orientation="vertical"
                 android:layout_gravity="center">
 
-            <TextView
+                <TextView
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:text="@string/numerosede"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/numerosede"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
 
-            <EditText
-                android:id="@+id/editTextNumSede"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:ems="10"
-                android:inputType="numberSigned"
-                android:hint="@string/numsedes">
-                <requestFocus />
-            </EditText>
+                <EditText
+                    android:id="@+id/editTextNumSede"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="@string/numsedes">
+                    <requestFocus />
+                </EditText>
 
-            <TextView
+                <TextView
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:text="@string/nombresede" />
-
-
-            <EditText
-                android:id="@+id/editTextNombreSede"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:ems="10" />
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:text="@string/latitud" />
-
-            <EditText
-                android:id="@+id/editTextLatitud"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:ems="10"
-                android:inputType="numberDecimal|numberSigned"/>
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:text="@string/longitud"/>
-
-            <EditText
-                android:id="@+id/editTextlongitud"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:ems="10"
-                android:inputType="numberDecimal|numberSigned"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="@string/nombresede" />
 
 
-        </LinearLayout>
+                <EditText
+                    android:id="@+id/editTextNombreSede"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ems="10" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_gravity="center">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="@string/latitud" />
+
+                <EditText
+                    android:id="@+id/editTextLatitud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ems="10"
+                    android:inputType="numberDecimal|numberSigned"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="@string/longitud"/>
+
+                <EditText
+                    android:id="@+id/editTextlongitud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ems="10"
+                    android:inputType="numberDecimal|numberSigned"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:layout_gravity="center">
 
 
@@ -175,46 +187,35 @@
                     android:onClick="modificacion"
                     android:text="@string/Modificar"
                     android:drawableLeft="@drawable/ic_ico_edit"/>
+
+                <Button
+                    android:id="@+id/btretornar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="retornar"
+                    android:text="@string/Retornar"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/ic_ico_home"
+                    />
             </LinearLayout>
 
-     </LinearLayout>
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="5dp"
-            android:background="#ff958e4b"
-            android:layout_marginTop="5dp"
-            />
 
 
 
-        <Button
-            android:id="@+id/btretornar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="retornar"
-            android:text="@string/Retornar"
-            android:layout_gravity="center_horizontal"
-            android:drawableLeft="@drawable/ic_ico_home"
-           />
-
-        <Button
-            android:id="@+id/btnallsedes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:text="@string/sedesdisponibles"
-            android:layout_gravity="center_horizontal"/>
-        <ListView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/lista"/>
 
     </LinearLayout>
 
 
 
-</LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
 
 
